@@ -13,6 +13,11 @@ class Item:
 	def setNext(self, newItem):
 		self.__nextItem = newItem
 
+	def setData(self, newData):
+		self.__data = newData
+
+	
+
 class Stack:
 	def __init__(self, head = None, maxSize = 20):
 		self.__head = head
@@ -44,7 +49,7 @@ class Stack:
 		current = self.__head
 		while current.getNext()!=None:
 			current = current.getNext()
-		return current
+		return str(current)
 
 	def push(self, newData):
 		if self.isEmpty():
@@ -55,27 +60,26 @@ class Stack:
 			print("Overflow Exception")
 			return
 
-		current = self.__head
+		#pushing in O(1) time. New Node is made the HEAD and older head is shifted to next node.
+		newNode = Item(newData)
+		newNode.setNext(self.__head)
+		self.__head (newNode)
+		
 
-		while current.getNext() != None:
-			current = current.getNext()
-
-		current.setNext(Item(newData))
-
+	#head is removed
 	def pop(self):
 
 		if self.isEmpty():
 			print("Underflow Exception")
 			return
 
-		current = self.__head
+		if self.returnTop() == str(self.__head):
+			retVal = self.__head
+			self.__head = None
+			return retVal
 
-		while (current.getNext()).getNext() != None:
-			current = current.getNext()
-
-		retVal = current.getNext()
-		current.setNext(None)
-
+		retVal = self.__head
+		self.__head = self.__head.getNext()
 		return retVal
 
 	def __str__(self):

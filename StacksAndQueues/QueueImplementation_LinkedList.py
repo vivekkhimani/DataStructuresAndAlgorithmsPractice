@@ -14,12 +14,13 @@ class Item:
 		self.__nextItem = newItem
 
 class Queue:
-	def __init__(self, head = None, maxSize = 20):
+	def __init__(self, head = None, maxSize = 20, last = None):
 		self.__head = head
 		self.__maxSize = maxSize
+		self.__last = last
 
 	def isEmpty(self):
-		if self.__head == None:
+		if self.__head == None and self.__last == None:
 			return True
 		return False
 
@@ -41,10 +42,7 @@ class Queue:
 		return False
 
 	def returnLast(self):
-		current = self.__head
-		while current.getNext()!=None:
-			current = current.getNext()
-		return current
+		return self.__last
 
 	def returnFirst(self):
 		return self.__head
@@ -52,18 +50,16 @@ class Queue:
 	def push(self, newData):
 		if self.isEmpty():
 			self.__head = Item(newData)
+			self.__last = Item(newData)
 			return
 
 		if self.isFull():
 			print("Overflow Exception")
 			return
 
-		current = self.__head
-
-		while current.getNext() != None:
-			current = current.getNext()
-
-		current.setNext(Item(newData))
+		else:
+			self.__last.setNext(Item(newData))
+			self.__last = self.__last.getNext()
 
 	def pop(self):
 
@@ -71,13 +67,12 @@ class Queue:
 			print("Underflow Exception")
 			return
 
-		
-		retVal = self.__head
-		newHead = self.__head.getNext()
-		newNext = newHead.getNext()
 
-		self.__head = newHead
-		self.__head.setNext(newNext)
+		retVal = self.__head
+		self.__head = self.__head.getNext()
+
+		if self.__head == None:
+			self.__last = None
 
 		return retVal
 
@@ -92,22 +87,22 @@ class Queue:
 
 		return ret_string
 
-#if __name__ == '__main__':
-val1 = Item(25)
-val2 = Item(23)
-val3 = Item(10)
-val4 = Item(8)
-val5 = Item(7)
+if __name__ == '__main__':
+	val1 = Item(25)
+	val2 = Item(23)
+	val3 = Item(10)
+	val4 = Item(8)
+	val5 = Item(7)
 
-myQ = Queue()
+	myQ = Queue()
 
-myQ.push(val1)
-myQ.push(val2)
-myQ.push(val3)
-print(myQ.returnLength())
-myQ.pop()
-myQ.setSize(3)
-myQ.push(val4)
-myQ.push(val5)
+	myQ.push(val1)
+	myQ.push(val2)
+	myQ.push(val3)
+	print(myQ.returnLength())
+	myQ.pop()
+	myQ.setSize(3)
+	myQ.push(val4)
+	myQ.push(val5)
 
-print(myQ)
+	print(myQ)
