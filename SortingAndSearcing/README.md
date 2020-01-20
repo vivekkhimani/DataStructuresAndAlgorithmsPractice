@@ -12,6 +12,8 @@ This directory contains the implementation of most commonly seen search algorith
 
 ## Technical Details:
 - Searching:
+
+
 | Algorithm    		| Best Case		| Worst Case		| Average Case		|
 | -----    				| -----       	| -----           | -----				|
 | Linear Search		|  O(1)     	| O(n)         	| O(n)				|		
@@ -19,6 +21,8 @@ This directory contains the implementation of most commonly seen search algorith
 
 
 - Sorting:
+
+
 | Algorithm          | Best Case    | Worst Case      | Average Case    |
 | -----              | -----        | -----           | -----           |
 | Bubble Sort	      |	O(n)		   | O(n^2)		      | O(n^2)		      |
