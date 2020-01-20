@@ -13,14 +13,14 @@ This directory contains the implementation of most commonly seen search algorith
 ## Technical Details:
 - Searching:
 | Algorithm    		| Best Case		| Worst Case		| Average Case		|
-| -----    				| -----       	| ----           	| ----				|
+| -----    				| -----       	| -----           | -----				|
 | Linear Search		|  O(1)     	| O(n)         	| O(n)				|		
 | Binary Search		|  O(1)     	| O(log n)        | O(log n)			|
 
 
 - Sorting:
 | Algorithm          | Best Case    | Worst Case      | Average Case    |
-| -----              | -----        | ----            | ----            |
+| -----              | -----        | -----           | -----           |
 | Bubble Sort	      |	O(n)		   | O(n^2)		      | O(n^2)		      |
 | Selection Sort     |  O(n^2)		| O(n^2)				| O(n^2)				|
 | Insertion Sort		|	O(n)			| O(n^2)			 	| O(n^2)				|
