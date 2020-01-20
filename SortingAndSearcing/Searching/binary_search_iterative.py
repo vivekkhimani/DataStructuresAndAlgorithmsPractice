@@ -2,18 +2,15 @@
 Description:
 BinarySearch (Algorithm Description) - Look for the element at the centre, if not found, further divide the array in two parts, and keep on repeating the process until the element is found. THIS ONLY WORKS ON SORTED ARRAYS and CAN BE DONE USING RECURSION OR LOOPS
 
-Time Complexity: O(logn)
+Average Time Complexity: O(logn)
 '''
 
 import math
 
 def binarySearch(input_list,key):
-    
-
-
-    while len(input_list) >= 1:
-        start = 0
-        end = len(input_list) - 1
+    start = 0
+    end = len(input_list) - 1
+    while (start<=end):
         mid = (start + end)/2
         mid = math.floor(mid)
 
@@ -21,10 +18,10 @@ def binarySearch(input_list,key):
             return "FOUND"
 
         elif (key < input_list[mid]):
-            input_list = input_list[0:mid]
+            end = mid-1
 
         elif (key > input_list[mid]):
-            input_list = input_list[(mid+1):(end+1)]
+            start = mid+1
 
                 
     return "NOT FOUND"
@@ -35,4 +32,4 @@ def binarySearch(input_list,key):
 my_list = [10,9,4,1,89,45,67,23,12,76]
 my_list.sort()
 
-print(binarySearch(my_list,90))
+print(binarySearch(my_list,10))
