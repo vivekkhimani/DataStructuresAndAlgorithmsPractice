@@ -1,3 +1,0 @@
-This directory contains implementations of Stacks and Queues using Linked List. Please note that the Stacks and Queues can also be implemented using other methods like arrays (for stacks - fixed size problem) and cirular arrays (for queues - fixed size problem again). Undoubtedly, one can use dynamically resizeable arrays to resolve the size issues but using a Linked List makes more sense to me because the push and pop functions are mostly implemented at the beginning or the end. And linked lists are generally very good at those. 
-
-I am still planning to add a merged Stack and Queue structure implemented with a Doubly Linked List and other coding challenges for the same. Keep checking for updates real soon! As I said, the list is never exhaustive. 
