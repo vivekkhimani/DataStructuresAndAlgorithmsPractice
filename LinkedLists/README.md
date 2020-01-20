@@ -10,7 +10,7 @@ This directory contains implementation of various applications of Linked Lists a
 
 ## Technical Details:
 
-- Singly Linked List:
+- **Singly Linked List:**
 
 | Operation          | Average Case | Worst Case      |
 | -----              | -----        | -----           | 
@@ -20,7 +20,7 @@ This directory contains implementation of various applications of Linked Lists a
 | Deletion				| O(1)			| O(1)				|
 
 
-- Doubly Linked List:
+- **Doubly Linked List:**
 
 | Operation          | Average Case | Worst Case      |
 | -----              | -----        | -----           |
@@ -29,7 +29,7 @@ This directory contains implementation of various applications of Linked Lists a
 | Insertion          | O(1)         | O(1)            |
 | Deletion           | O(1)         | O(1)            |
 
--Skip List:
+- **Skip List:**
 
 | Operation          | Average Case | Worst Case      |
 | -----              | -----        | -----           |
