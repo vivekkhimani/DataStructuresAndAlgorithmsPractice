@@ -9,5 +9,8 @@ This directory contains the implementation of Stacks & Queues in Python from scr
 This directory contains implementation of various applications of Stacks & Queues and common questions that can be seen on the coding interview. 
 
 
+## Technical Details:
+- To be added soon.
+
 ## Status:
 A lot of implementations are complete in the repository but I am still working on adding more stuff and improving the code style so it becomes easier for the readers to use it. Thank you for the patience. 
