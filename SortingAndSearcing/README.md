@@ -11,7 +11,7 @@ This directory contains the implementation of most popular searching algorithms 
 This directory contains the implementation of most commonly seen search algorithms - merge sort, quick sort, bubble sort, selection sort, shell sort, counting sort, heap sort, radix sort. The repository will also contain applications and frequently appearing questions on the interview.
 
 ## Technical Details:
-- Searching:
+- **Searching:**
 
 
 | Algorithm    		| Best Case		| Worst Case		| Average Case		|
@@ -20,7 +20,7 @@ This directory contains the implementation of most commonly seen search algorith
 | Binary Search		|  O(1)     	| O(log n)        | O(log n)			|
 
 
-- Sorting:
+- **Sorting:**
 
 
 | Algorithm          | Best Case    | Worst Case      | Average Case    |
