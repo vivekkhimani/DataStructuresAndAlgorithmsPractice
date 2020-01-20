@@ -3,6 +3,8 @@ Description:
 The simplest searching algorithm in which the element is searched by iterating in-order through a data structure and checking if the required element is present or not.
 
 Time Complexity - O(n)
+
+Status - Complete.
 '''
 
 def linear_search(input_list,key):

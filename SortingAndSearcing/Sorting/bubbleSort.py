@@ -5,6 +5,8 @@ bubbleSort (Algorithm Description) - simple sorting algorithm that repeatedly st
 Average Time Complexity: O(n^2)
 
 Tip: Not frequently used in practice anymore!
+
+Status: Complete.
 '''
 
 def bubbleSort(input_list):

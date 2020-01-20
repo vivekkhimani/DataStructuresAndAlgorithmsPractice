@@ -5,6 +5,8 @@ selectionSort (Algorithm Description) - This sorting algorithm is an in-place co
 Average Time Complexity: O(n^2)
 
 Tip: This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(n2), where n is the number of items.
+
+Status: Complete.
 '''
 
 def selectionSort(input_list):

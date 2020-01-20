@@ -6,6 +6,8 @@ Average Time Complexity: O(n^2)
 Best Time Complexity: O(n)
 
 Tip: Preferred manier times over more advanced algorithms (quick sort, merge sort, heap sort etc.) as it works very well on mostly sorted list. While other algorithms have same run-time as average running time.
+
+Status: Complete.
 '''
 
 
@@ -19,8 +21,9 @@ def insertionSort(inputList):
       j-=1
 
 
+
 ##DRIVER
 if __name__ == '__main__':
-	my_list = [10,9,4,1,89,45,67,23,12,76]
+  my_list = [10,9,4,1,89,45,67,23,12,76]
 	insertionSort(my_list)
-	print(my_list)
+  print(my_list)
