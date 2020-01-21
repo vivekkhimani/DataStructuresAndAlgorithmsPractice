@@ -6,6 +6,8 @@ Average Time Complexity: 	O(nlogn)
 Worst Case Time Complexity: O(n^2)
 
 Tip: One of the fastest comparison-based sorting algorithm but should try and avoid using it because of its high worst-case time complexity
+
+Status: Completed.
 '''
 
 def quickSort(inputList,start,stop):
