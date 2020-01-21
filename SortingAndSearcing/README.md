@@ -1,5 +1,9 @@
 ## Intro:
 
+
+
+## Structure:
+
 This directory contains the implementation of various searching and sorting algorithms that are commonly talked about, used, or frequently appear on the interviews. Along with implementations in Python, I have also provided details like algorithm description, running speed, and some tips for practical usage.
 
 The directory is divided into two groups in following manner:
@@ -36,4 +40,8 @@ This directory contains the implementation of most commonly seen search algorith
 
 
 ## Status:
-Searching implementations have been completed. The applications are yet to be added. I am currently working on the sorting implementations and expecting it to complete it soon. The sorting applications will also be added later. 
+- **(vivekkhimani) [01/21/2020]** - Searching implementations have been completed. All the sorting algorithms **except** Radix Sort, Counting Sort, Heap Sort have been done as well. The applications & interview questions are pending.
+
+
+## Interesting Question:
+- **(vivekkhimani) [01/21/2020]** - Will soon get started on this one. 
