@@ -1,5 +1,8 @@
 ## Intro:
 
+
+## Structure:
+
 This repository contains everything you need to know about the Linked Lists. It is primarily divided in two parts in following manner:
 
 - Implementation & Operation: 
@@ -40,4 +43,8 @@ This directory contains implementation of various applications of Linked Lists a
 
 
 ## Status:
-A lot of implementations are complete in the repository but I am still working on adding more stuff and improving the code style so it becomes easier for the readers to use it. Thank you for the patience. 
+**(vivekkhimani) [01/21/2020]** - A lot of implementations are complete in the repository but I am still working on adding more stuff and improving the code style so it becomes easier for the readers and contributors to use it. Thank you for the patience.
+
+
+## Interesting Problems:
+**(vivekkhimani) [01/21/2020]** - Will get started with this one soon!
