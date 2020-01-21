@@ -2,6 +2,9 @@
 - **Author:** Vivek Khimani
 - **Contact:** +12673049080
 - **Purpose:** Implementing various data structures and algorithms in Python with descriptions, time complexity, and tips for practical usage.
+- **Language:** Python 3
+- **Status:** Open for contributions.
+
 
 ## Motivation:
 - Lack of organized content, systematic code, and theoretical information on data structures and algorithms implemented in Python.
