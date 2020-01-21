@@ -7,8 +7,9 @@
 
 ### Basic Instructions:
 - Every topic covered on the "Index" section of main README.md file needs to have a seperate directory. Let's address such specific directories for each topic as "Topic Directories".
-- Each "Topic Directory" should contain a README.md file which is further divided in 3 sections - Intro, Technical Details, Status, and Interesting Problem. 
-	- **Intro** - May contain basic information about the data structure and the information about how the directory is organized. 
+- Each "Topic Directory" should contain a README.md file which is further divided in 3 sections - Intro, Structure, Technical Details, Status, and Interesting Problem. 
+	- **Intro** - May contain basic information about the data structure and its applications.
+	- **Structure** - May contain basic information about how content in the directory is organized. 
 	- **Technical Details** - This is the most important part as it contains information about the Big-O runtime while performing various operations on those data structures. There cannot be a specific structure for this one as it varies for different data structures but try to be consistent with the other "Topic Directories".
 	- **Status** - This section informs the viewers and other developers about the current status of the "Topic Directory". It may include details about the completed and pending algorithms, completeness of the interview questions, reliability of the code already present in the repository, and more. 
 	- **Interesting Problem** - This is an open for discussion section where open-source community can get together and work on interesting or trending problems related to the data structure. Once the problem is solved, it will not be removed from the list, but we will acknowledge the user who has solved the problem by adding their name on the README.md file. 
@@ -24,7 +25,14 @@ I acknowledge and understand that data structures and algorithms can be coded in
 	- **Big O time complexity (Average/Best/Worst if possible)**
 	- **Tips** (Any professional tips about the usage of this algorithm in the practical world)
 	- **Status** (The current status of the file. If the algorithms is complete, working, or incomplete)
+- **NOTE** - Please refer to the code in "SortingAndSearching" repository to get a better insight on code style.
 
+### Examples:
+- To make it easier for the contributors, I have already started contributing for 3 topics - Sorting & Searching, Linked Lists, Stacks & Queues.
+- The content in those repositories is exactly organized as per the instructions in this file. 
+- However, I need to work on the codestyle in the LinkedLists and Stacks&Queues repository but it should be done soon. 
+- Feel free to refer to Sorting and Searching repository for the code style and content.
+- I have also created empty directories (with only README.md) files so that the contributors can know that those directories are open for contributions.
 
 ### Pull Requests:
 - If you have any interesting content to contribute, please follow the appropriate procedure to generate a pull request.
