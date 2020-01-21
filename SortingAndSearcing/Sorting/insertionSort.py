@@ -25,5 +25,5 @@ def insertionSort(inputList):
 ##DRIVER
 if __name__ == '__main__':
   my_list = [10,9,4,1,89,45,67,23,12,76]
-	insertionSort(my_list)
+  insertionSort(my_list)
   print(my_list)
