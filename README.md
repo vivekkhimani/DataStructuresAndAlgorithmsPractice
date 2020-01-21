@@ -34,7 +34,8 @@
 
 
 ## Current Status:
-- I have started working on this repository recently and I will add content as and when I am able to develop it. The list of these topics is never exhaustive so stay tuned. Thank you for the patience.
+- **(vivekkhimani)** - I have started working on this repository recently and I will add content as and when I am able to develop it. The list of these topics is never exhaustive. So feel free to suggest or make changes to the index above and start contributing for the topic you mighe be interested in. 
+
 
 ## Contributing:
 - The project is protected by MIT License 2020. So it's open for usage and contributions by the external community. Please refer to CONTRIBUTING.md to learn more about contributing. 
