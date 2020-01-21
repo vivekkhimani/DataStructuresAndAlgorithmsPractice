@@ -19,11 +19,11 @@
 | Strings & Arrays						|	Upcoming								|
 | Math Puzzles								|	Upcoming								|
 | Sets										|	Upcoming								|
-| Miscellaneous							| 	Upcoming								|
 | Bit Manipulation						|	Upcoming								|
 | OOP & OOD									| 	Upcoming								|
 | Recursion & Dynamic Programming	|	Upcoming								|
 | System Design							|  Upcoming								|
+| Miscellaeous								|  Upcoming								|
 
 
 ## Note:
