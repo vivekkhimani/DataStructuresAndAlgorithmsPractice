@@ -12,25 +12,25 @@
 
 ## Index:
 | Topic     								| Status		  							|
-| -----     								| -----       							|
-| Sorting & Searching					|  Searching Complete     			| 
-| Linked List								|  Revision in Progress    		| 
-| Stacks & Queues							|	Revision In Progress			  	|
+| -----     								| -----										|
+| Sorting & Searching						|	Complete								| 
+| Linked List								|	Revision in Progress					| 
+| Stacks & Queues							|	Revision In Progress					|
 | Priority Queue							|	Upcoming								|
 | Hash Tables								|	Upcoming								|
-| Disjoint Sets							|	Upcoming								|
+| Disjoint Sets								|	Upcoming								|
 | Trees										|	Upcoming								|
-| Graphs										|	Upcoming								|
+| Graphs									|	Upcoming								|
 | Heaps										|	Upcoming								|
 | Trie										|	Upcoming								|
-| Strings & Arrays						|	Upcoming								|
+| Strings & Arrays							|	Upcoming								|
 | Math Puzzles								|	Upcoming								|
 | Sets										|	Upcoming								|
-| Bit Manipulation						|	Upcoming								|
+| Bit Manipulation							|	Upcoming								|
 | OOP & OOD									| 	Upcoming								|
-| Recursion & Dynamic Programming	|	Upcoming								|
-| System Design							|  Upcoming								|
-| Miscellaeous								|  Upcoming								|
+| Recursion & Dynamic Programming			|	Upcoming								|
+| System Design								|	Upcoming								|
+| Miscellaeous								|	Upcoming								|
 
 
 ## Current Status:
