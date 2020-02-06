@@ -17,7 +17,7 @@
 | Linked List								|	Revision in Progress					| 
 | Stacks & Queues							|	Revision In Progress					|
 | Priority Queue							|	Upcoming								|
-| Hash Tables								|	Upcoming								|
+| Hash Tables								|	Initiated - in Progress					|
 | Disjoint Sets								|	Upcoming								|
 | Trees										|	Upcoming								|
 | Graphs									|	Upcoming								|
