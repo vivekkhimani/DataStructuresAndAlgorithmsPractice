@@ -1,23 +1,34 @@
-#Implement a stack such that push, pop, and min operations are all executed in O(1) time
+'''
+Problem Statement:
+Implement a stack such that push, pop, and min operations are all executed in O(1) time
 
-#Push and Pop operations are quite straight forward and can be done in O(1) time if the stack is implemented using a LinkedList (when pointer to the last element is maintained) or an array.
+Approach:
+	a) Push and Pop operations are quite straight forward and can be done in O(1) time.
+	b) However, it's a bit tricky to keep a track of minimum element especially when an element is removed!
 
-#However, it's a bit tricky to keep a track of minimum element especially when an element is removed!
+Solution:
+	a) Add an attribute called minElement to the Stack object.
+	b)Each time a newElement is PUSHED:
+		->	If the stack is EMPTY, minElement = newElement and the newElement is pushed.
+		->	If the stack is NON-EMPTY && newElement >= minElement, just push the newElement
+		->	If the stack is NON-EMPTY && newElement < minElement, push newElement*2 - minElement(existing) and minElement = newElement.
 
-#To solve this we add an attribute to the Stack called minElement. 
+	c)Each time an existingElement is POPPED:
+		->	If the topElement > minElement, just pop the topElement.
+		->	If the topElement <= minElement, minElement = 2*minElement - existingElement and the existingElement is popped. This helps us to get the second-most minimum element.
 
-#Each time a newElement is PUSHED:
-		#a) If the stack is EMPTY, minElement = newElement and the newElement is pushed.
-		#b) If the stack is NON-EMPTY && newElement >= minElement, just push the newElement
-		#c) If the stack is NON-EMPTY && newElement < minElement, push newElement*2 - minElement(existing) and minElement = newElement.
+Why does the logic work:
+	a) We store the ACTUAL minimum value in minElement when a minElement is pushed.
+	b) But we store a value which is lower than the actual minimum value on the stack.
+	c) We use the above mentioned formula because whenever the minimum value from the stack is removed, we can backtrace using the formula and get the previously stored minimum value.
+	d) The approach is not intuitive but makes sense when you do math on paper!
 
-#Each time an existingElement is POPPED:
-		#a) If the topElement > minElement, just pop the topElement.
-		#b) If the topElement <= minElement, minElement = 2*minElement - existingElement and the existingElement is popped. This helps us to get the second-most minimum element.
+Loophole:
+	a) Actual minimum value would never be stored on the stack.
 
-#NOTE: This logic works because we store the ACTUAL VALUE of minimum in minElement when a minimum newElement is pushed. But the element that actually goes in the stack is always LESS than the actual minimum because of (2*Element - minElement). But whenever we are popping an element whose value is less than or equal to actualMin, we replace minElement with (2*minElement - popElement) . Obviously, the element which will be lesser than the minElement would have been extracted because of the first formula. This gives us the original min back. This can be better understood by drawing an actual stack on paper and doing math.
-
-#Let's look at the LinkedList implementation. I will copy the code from previous implementation and add a min attribute to it.
+Status:
+	Complete
+'''
 
 class Item:
 	def __init__(self, data = None, nextItem = None):
@@ -83,14 +94,12 @@ class myStack:
 			return
 		
 		#Checking for min
-		if int(newData) < int(self.__minElement):
-			insertData = (int(newData)*2) - int(self.__minElement)
-			self.__minElement = int(newData)
+		if newData < self.__minElement:
+			insertData = (newData)*2 - self.__minElement
+			self.__minElement = newData
 		
 		if int(newData) >= int(self.__minElement):
 			insertData = newData
-
-	#Inserting in O(1)
 
 		newNode = Item(insertData)
 		newNode.setNext(self.__head)
@@ -113,7 +122,7 @@ class myStack:
 		if int(self.__head.getData()) <= self.__minElement:
 			self.__minElement = (2*self.__minElement) - int(self.__head.getData())
 
-		#For deleting in O(1) time 
+
 		retVal = self.__head
 		self.__head = self.__head.getNext()
 		return retVal
