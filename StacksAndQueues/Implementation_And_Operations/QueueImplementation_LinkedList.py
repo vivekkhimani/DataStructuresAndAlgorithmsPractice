@@ -1,4 +1,24 @@
-#Individual Item in a stacks
+'''
+Description:
+Queue are one of the most commonly seen ADT that can be implemented using an array, list, or linked list. We have implemented it here using a Singly Linked List. The queues are commonly identified by their FIFO (First-In, First-Out Property). Because the item that is pushed first in the queue is the first one to be served.
+
+Data Structure Used:
+	Linked List
+
+Average Time Complexity:
+	Access=O(n)
+	Search=O(n)
+	Insertion=O(1)
+	Deletion=O(1)
+
+Worst Time Complexity:
+	Access=O(n)
+	Search=O(n)
+	Insertion=O(1)
+	Deletion=O(1)
+
+Status: Complete.
+'''
 class Item:
 	def __init__(self, data = None, nextItem = None):
 		self.__data = data
@@ -12,6 +32,7 @@ class Item:
 	
 	def setNext(self, newItem):
 		self.__nextItem = newItem
+
 
 class Queue:
 	def __init__(self, head = None, maxSize = 20, last = None):

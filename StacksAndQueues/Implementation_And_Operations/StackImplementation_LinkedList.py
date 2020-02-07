@@ -1,4 +1,25 @@
-#Individual Item in a stacks
+'''
+Description:
+Stacks are one of the most commonly seen ADT that can be implemented using an array, list, or linked list. We have implemented it here using a Singly Linked List. The stacks are commonly identified by their LIFO (Last-In, First-Out Property). Because the item that is pushed last on the stack is the first one to be removed.
+
+Data Structure Used:
+	Linked List
+
+Average Time Complexity:
+	Access=O(n)
+	Search=O(n)
+	Insertion=O(1)
+	Deletion=O(1)
+
+Worst Time Complexity:
+	Access=O(n)
+	Search=O(n)
+	Insertion=O(1)
+	Deletion=O(1)
+
+Status: Complete.
+'''
+
 class Item:
 	def __init__(self, data = None, nextItem = None):
 		self.__data = data
@@ -60,15 +81,12 @@ class Stack:
 			print("Overflow Exception")
 			return
 
-		#pushing in O(1) time. New Node is made the HEAD and older head is shifted to next node.
 		newNode = Item(newData)
 		newNode.setNext(self.__head)
 		self.__head (newNode)
 		
 
-	#head is removed
 	def pop(self):
-
 		if self.isEmpty():
 			print("Underflow Exception")
 			return
@@ -81,6 +99,7 @@ class Stack:
 		retVal = self.__head
 		self.__head = self.__head.getNext()
 		return retVal
+
 
 	def __str__(self):
 		ret_string = ""
@@ -112,6 +131,3 @@ if __name__ == '__main__':
 	myStack.push(val5)
 
 	print(myStack)
-
-
-	
