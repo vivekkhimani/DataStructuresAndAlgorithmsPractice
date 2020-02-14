@@ -1,7 +1,3 @@
-##FIXME:
-- /Applications_And_Interview/SymbolCheck
-- /Applications_And_Interviews/PushPopMinStack
-
 ## Intro:
 - **Need to be added**
 
