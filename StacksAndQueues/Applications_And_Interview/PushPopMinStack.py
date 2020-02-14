@@ -151,5 +151,7 @@ if __name__ == "__main__":
 	updatedStack.push(4)
 	updatedStack.pop()
 	updatedStack.push(3)
+	updatedStack.pop()
+	updatedStack.pop()
 	print(updatedStack)
 	print(updatedStack.returnMin())

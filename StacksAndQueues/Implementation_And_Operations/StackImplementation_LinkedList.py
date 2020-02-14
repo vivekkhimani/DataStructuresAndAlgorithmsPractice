@@ -83,7 +83,7 @@ class Stack:
 
 		newNode = Item(newData)
 		newNode.setNext(self.__head)
-		self.__head (newNode)
+		self.__head = newNode
 		
 
 	def pop(self):

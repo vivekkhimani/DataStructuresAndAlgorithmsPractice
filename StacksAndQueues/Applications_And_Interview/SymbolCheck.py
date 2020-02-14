@@ -1,7 +1,17 @@
-#Checking opening and closing of symbols (,{,},) or syntax (programming languages often require proper opening and closing of brackets) using Stacks!
+'''
+Problem Description:
+Checking opening and closing of symbols (,{,},) or syntax (programming languages often require proper opening and closing of brackets).
 
-#We will use the Stack already defined in the directory
-
+Solution:
+	a) Whenever an opening symbol is detected, PUSH it on the stack.
+	b) Whenever a matching closing symbol is detected, POP the opening one from the stack.
+	c) If non-matching symbol is found, return INVALID.
+	d) If stack is non-empty at the end, return INVALID.
+	e) If stack is empty at the end, return VALID.
+'''
+import sys
+import os
+sys.path.append(os.path.abspath('../Implementation_And_Operations'))
 from StackImplementation_LinkedList import Stack
 
 myStack = Stack()
